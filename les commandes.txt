@@ -1,0 +1,11 @@
+Les commandes de l’exercice1:
+1)	Ajouter un enregistrement
+curl -i -H 'Content-Type: application/json' -X POST -d '{"id":"101","INSPIRE_number":"INSPIRE_1245","affiliation":"Univ","name":'{"first_name":"	lassal","last_name":"mawloud"}',"title":"Mosta"}' http://localhost:3000/authors
+
+2)	Mettre à jour un enregistrement
+curl -i -H 'Content-Type: application/json' -X PUT -d '{"affiliation":"Oran"}' http://localhost:3000/authors/101
+101 dans la commande indique le numéro enregistrement dans le fichier db.json
+
+3)	Afficher le header de HTTP
+curl --head "http://localhost:3000/authors"
+
